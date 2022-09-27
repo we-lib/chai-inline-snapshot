@@ -1,8 +1,8 @@
 # chai-inline-snapshot
 
 - [x] inline snapshot
+- [x] indent free
 - [ ] auto insert
-- [ ] indent free
 
 ```sh
 npm install --dev chai
@@ -25,17 +25,17 @@ export let test = () => {
     }
   ]
   expect(actual).to.matchInlineSnapshot(`
-[
-  {
-    "text": "https://mp.weixin.qq.com/s/jLMBp1e7BC-PGr2tLEQpRQ
-周日读报",
-    "type": "text",
-  },
-  {
-    "index": 21,
-    "type": "qqface",
-  },
-]
+    [
+      {
+        "text": "https://mp.weixin.qq.com/s/jLMBp1e7BC-PGr2tLEQpRQ
+    周日读报",
+        "type": "text",
+      },
+      {
+        "index": 21,
+        "type": "qqface",
+      },
+    ]
   `)
 }
 ```
@@ -45,6 +45,7 @@ export let test = () => {
 > c8 xv
 
 index.test.js
+indent.test.js
 ----------|---------|----------|---------|---------|-------------------
 File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
 ----------|---------|----------|---------|---------|-------------------
