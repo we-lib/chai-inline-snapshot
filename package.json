@@ -1,0 +1,30 @@
+{
+  "name": "chai-inline-snapshot",
+  "version": "0.0.1",
+  "description": "Chai assertion for inline-snapshot",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/we-lib/chai-inline-snapshot.git"
+  },
+  "license": "ISC",
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "coverage": "c8 xv",
+    "test": "xv"
+  },
+  "dependencies": {
+    "pretty-format": "^29.0.3"
+  },
+  "devDependencies": {
+    "c8": "^7.12.0",
+    "chai": "^4.3.6",
+    "xv": "^1.1.1"
+  },
+  "peerDependencies": {
+    "chai": "*"
+  }
+}
